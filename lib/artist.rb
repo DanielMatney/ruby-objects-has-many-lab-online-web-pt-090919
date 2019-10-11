@@ -1,17 +1,17 @@
 require 'pry'
 class Artist
-  attr_accessor :name, :title
+  attr_accessor :name
   
   def initialize(name)
     @name = name
   end
   
-  def add_song(title)
-    song = Song.new(title)
+  def add_song(name)
+    song = Song.new(name)
   end
   
-  def add_song_by_name(title)
-    song = Song.new(title)
+  def add_song_by_name(name)
+    song = Song.new(name)
     song.artist = self
   end
   
