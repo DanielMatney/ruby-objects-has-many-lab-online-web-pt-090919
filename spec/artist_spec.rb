@@ -1,5 +1,5 @@
 require "spec_helper"
-
+require 'pry'
 describe "Artist" do
 
   let!(:adele) { Artist.new("Adele") }
@@ -41,7 +41,7 @@ describe "Artist" do
         expect(adele.songs.last.artist).to eq(adele)
       end
     end
-
+binding.pry
     describe ".song_count" do
       it "is a class method that returns the total number of songs associated to all existing artists" do
         expect(Artist.song_count).to eq(3)
