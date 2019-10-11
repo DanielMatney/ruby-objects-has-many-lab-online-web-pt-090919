@@ -28,4 +28,3 @@ class Artist
     Song.all.length
   end
 end
-binding.pry
